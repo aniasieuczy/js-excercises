@@ -181,3 +181,13 @@ var countSheep = function (num){
    };
 
    removeChar('pAniap');
+
+   function bonusTime(salary, bonus) {
+        if(bonus) {
+            salary = salary * 10;
+        }
+        return `£${salary}`;
+   }
+
+   console.log(bonusTime(4000, false));
+   console.log(bonusTime(4000, true));
