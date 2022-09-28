@@ -113,13 +113,13 @@ duplicateExample = [1,1,1,2,3,5,99,100];
 function distinct(a) {
     noDuplicates = [];
     for(let e = 0; e < a.length; e++){
-        noDuplicates.push(a[e]);
-        if(a[e] == a[e+1] ) {
-            a.splice(e+1, 1);
-        }
-    }
-    console.log(noDuplicates);
-    return noDuplicates;
+        if(noDuplicates.icludes(a[e])) {
+            continue;
+        } else {
+            noDuplicates.push(a[e]);
+    } 
+}
+return noDuplicates;
 }
 // noDuplicates = new Set(a);
 // console.log(noDuplicates);
@@ -127,7 +127,7 @@ function distinct(a) {
 
 
 
-distinct(duplicateExample);
+console.log(distinct(duplicateExample));
 
 // function getPlanetName(id){
 //     var name;
