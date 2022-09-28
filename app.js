@@ -110,18 +110,18 @@ function findNotConsecutive(arr){
 console.log(squareSum(square));
 
 duplicateExample = [1,1,1,2,3,5,99,100];
-function distinct(a) {
-    noDuplicates = [];
-    for(let e = 0; e < a.length; e++){
-        if(noDuplicates.icludes(a[e])) {
-            continue;
-        } else {
-            noDuplicates.push(a[e]);
-    } 
-}
-return noDuplicates;
-}
-// noDuplicates = new Set(a);
+    function distinct(a) {
+        noDuplicates = [];
+          for(let e = 0; e < a.length; e++){
+               if(!noDuplicates.includes(a[e])){
+                 noDuplicates.push(a[e]);
+               } else {
+                 continue;
+               }     
+        }
+      return noDuplicates;
+      }
+// noDuplicates = [...new Set(a)];
 // console.log(noDuplicates);
 // }
 
@@ -161,3 +161,23 @@ console.log(distinct(duplicateExample));
 //   }
 
 //   console.log(getPlanetName(5));
+
+var countSheep = function (num){
+    let sheeps = [];
+    for(let f= 1; f <= num; f++) {
+        let part = `${f} sheep...`;
+        sheeps.push(part);
+    }
+    return sheeps.join('');
+  }
+  console.log(countSheep(5));
+
+
+  function removeChar(str){
+    let last = str.length - 1;
+    let newStr = str.slice(1, last);
+    console.log(newStr);
+    return newStr;
+   };
+
+   removeChar('pAniap');
