@@ -262,24 +262,45 @@ console.log("hello from app.js");
 //   }
 // console.log(arithmetic(2, 2, "add"));
 
-function getCount(str) {
-  let vowCount = 0;
-  vow = "";
-  for (let i = 0; i <= str.length; i++) {
+// function getCount(str) {
+//   let vowCount = 0;
+//   vow = "";
+//   for (let i = 0; i <= str.length; i++) {
     
-    if(str.charAt(i) == "a"){
-      vowCount = vowCount + 1;
-    } else if(str.charAt(i) == "e") {
-      vowCount++;
-    } else if(str.charAt(i) == "i") {
-      vowCount++;
-    } else if(str.charAt(i) == "o") {
-      vowCount++;
-    } else if(str.charAt(i) == "u") {
-      vowCount++;
-    } 
-  }
-  return vowCount;
-}
+//     if(str.charAt(i) == "a"){
+//       vowCount = vowCount + 1;
+//     } else if(str.charAt(i) == "e") {
+//       vowCount++;
+//     } else if(str.charAt(i) == "i") {
+//       vowCount++;
+//     } else if(str.charAt(i) == "o") {
+//       vowCount++;
+//     } else if(str.charAt(i) == "u") {
+//       vowCount++;
+//     } 
+//   }
+//   return vowCount;
+// }
 
-console.log(getCount("abracadabra"));
+// console.log(getCount("abracadabra"));
+
+function squareDigits(num){
+  let number = '' + num;
+  // console.log(number);
+  numberArr = [];
+  for(let i = 0; i< number.length; i++) {
+    numberArr.push(number[i]);
+  }
+  // console.log(numberArr);
+  let squredDigits = 0;
+  let sumOfSquaredDigits = [];
+
+  for(let j = 0; j < numberArr.length; j++) {
+    let n = parseInt(numberArr[j]);
+    squaredDigits = Math.pow(n, 2);
+    sumOfSquaredDigits.push(squaredDigits);
+  }
+  return parseInt(sumOfSquaredDigits.join(''));
+}
+console.log(squareDigits(9119));
+console.log(squareDigits(2112));
