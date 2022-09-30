@@ -305,9 +305,20 @@ console.log("hello from app.js");
 // console.log(squareDigits(9119));
 // console.log(squareDigits(2112));
 
-function disemvowel(str) {
-  let noVowel = str.replace(/a|e|i|o|u/ig, "");
-  return noVowel;
-}
+// function disemvowel(str) {
+//   let noVowel = str.replace(/a|e|i|o|u/ig, "");
+//   return noVowel;
+// }
 
-console.log(disemvowel("This website is for losers LOL!"));
+// console.log(disemvowel("This website is for losers LOL!"));
+
+// function highAndLow(numbers){
+//   numbers = numbers.split(" ");
+//   // console.log(numbers);
+//   return Math.max(...numbers) + " " + Math.min(...numbers); 
+// }
+// console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+
+function descendingOrder(n){
+  //...
+}
