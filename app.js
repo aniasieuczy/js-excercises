@@ -284,23 +284,30 @@ console.log("hello from app.js");
 
 // console.log(getCount("abracadabra"));
 
-function squareDigits(num){
-  let number = '' + num;
-  // console.log(number);
-  numberArr = [];
-  for(let i = 0; i< number.length; i++) {
-    numberArr.push(number[i]);
-  }
-  // console.log(numberArr);
-  let squredDigits = 0;
-  let sumOfSquaredDigits = [];
+// function squareDigits(num){
+//   let number = '' + num;
+//   // console.log(number);
+//   numberArr = [];
+//   for(let i = 0; i< number.length; i++) {
+//     numberArr.push(number[i]);
+//   }
+//   // console.log(numberArr);
+//   let squredDigits = 0;
+//   let sumOfSquaredDigits = [];
 
-  for(let j = 0; j < numberArr.length; j++) {
-    let n = parseInt(numberArr[j]);
-    squaredDigits = Math.pow(n, 2);
-    sumOfSquaredDigits.push(squaredDigits);
-  }
-  return parseInt(sumOfSquaredDigits.join(''));
+//   for(let j = 0; j < numberArr.length; j++) {
+//     let n = parseInt(numberArr[j]);
+//     squaredDigits = Math.pow(n, 2);
+//     sumOfSquaredDigits.push(squaredDigits);
+//   }
+//   return parseInt(sumOfSquaredDigits.join(''));
+// }
+// console.log(squareDigits(9119));
+// console.log(squareDigits(2112));
+
+function disemvowel(str) {
+  let noVowel = str.replace(/a|e|i|o|u/ig, "");
+  return noVowel;
 }
-console.log(squareDigits(9119));
-console.log(squareDigits(2112));
+
+console.log(disemvowel("This website is for losers LOL!"));
