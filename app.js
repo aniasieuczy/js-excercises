@@ -228,21 +228,38 @@ console.log("hello from app.js");
 //    console.log(abbrevName("anna Szpecht"));
 
   //  const sequenceSum = (begin, end, step) => {
-    function sequenceSum (begin, end, step) {
-    
-    let sum = 0;
-    // if(step > end) {
-    //   return 0;
-    // } else {
-      for(let i = begin; i <= end; i=i+step) {
-        sum = i + sum;
-        console.log(i, sum);
-         
-      }
-    // }
-   return sum;
-   }
-   console.log('ej');
-  //  console.log(sequenceSum(2,2,2));
-   console.log(sequenceSum(2,6,2));
+  //   let sum = 0;
+  //   if(step > end) {
+  //     return 0;
+  //   } else {
+  //     for(let i = begin; i <= end; i=i+step) {
+  //       sum = i + sum;
+  //     }
+  //   }
+  //  return sum;
+  //  }
+
+  //  console.log(sequenceSum(2,6,2));
   //  console.log(sequenceSum(1,5,3));
+
+  function arithmetic(a, b, operator){
+    let result = 0;
+    switch(operator){
+        case "add":
+          result = a + b;
+        break;
+        case "subract":
+          result= a - b;
+          break;
+        case "multiply":
+          result = a  * b;
+          break;
+        case "divide":
+          result = a / b;
+        break;
+        default:
+          return result;
+    }
+    return result;
+  }
+console.log(arithmetic(2, 2, "add"));
