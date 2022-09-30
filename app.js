@@ -124,43 +124,39 @@ duplicateExample = [1,1,1,2,3,5,99,100];
 // noDuplicates = [...new Set(a)];
 // console.log(noDuplicates);
 // }
-
-
-
 console.log(distinct(duplicateExample));
 
-// function getPlanetName(id){
-//     var name;
-//     switch(id){
-//       case 1:
-//         name = 'Mercury'
-//         break;
-//       case 2:
-//         name = 'Venus'
-//         break;
-//       case 3:
-//         name = 'Earth'
-//         break;
-//       case 4:
-//         name = 'Mars'
-//         break;
-//       case 5:
-//         name = 'Jupiter'
-//         break;
-//       case 6:
-//         name = 'Saturn'
-//         break;
-//       case 7:
-//         name = 'Uranus'
-//         break;
-//       case 8:
-//         name = 'Neptune'
-//         break;
-//     }
-//     return name;
-//   }
-
-//   console.log(getPlanetName(5));
+function getPlanetName(id){
+    var name;
+    switch(id){
+      case 1:
+        name = 'Mercury'
+        break;
+      case 2:
+        name = 'Venus'
+        break;
+      case 3:
+        name = 'Earth'
+        break;
+      case 4:
+        name = 'Mars'
+        break;
+      case 5:
+        name = 'Jupiter'
+        break;
+      case 6:
+        name = 'Saturn'
+        break;
+      case 7:
+        name = 'Uranus'
+        break;
+      case 8:
+        name = 'Neptune'
+        break;
+    }
+    return name;
+  }
+  console.log(getPlanetName(5));
 
 var countSheep = function (num){
     let sheeps = [];
@@ -175,11 +171,11 @@ var countSheep = function (num){
 
   function removeChar(str){
     let last = str.length - 1;
-    let newStr = str.slice(1, last);
+    // debugger;
+     let newStr = str.slice(1, last);
     console.log(newStr);
     return newStr;
    };
-
    removeChar('pAniap');
 
    function bonusTime(salary, bonus) {
@@ -191,3 +187,46 @@ var countSheep = function (num){
 
    console.log(bonusTime(4000, false));
    console.log(bonusTime(4000, true));
+
+
+   function isIsogram(str) {
+     if(str.length = 0) {
+      return true;
+    } else {
+      str = str.toLowerCase();
+    }
+
+    let changeToArr =str.split("");
+    let sortedArray = changeToArr.sort(); 
+    console.log(sortedArray);
+
+     for(let g=0; g < str.length; g++) {
+      if (sortedArray[g] == sortedArray[g+1]) {
+        return false;
+      }
+    } 
+      return true;
+   }
+  
+   console.log(isIsogram("Anna"));
+   console.log(isIsogram("nikos"));
+   console.log(isIsogram(""));
+
+   function abbrevName(name) {
+    nameArr = [];
+    for(l = 0; l < name.length; l++) {
+      nameArr.push(name[l]);
+    }
+    nameArr = name.split(" ");
+    initials = [];
+    console.log(nameArr);
+    
+    initials.push(nameArr[0].charAt(0).toUpperCase()); 
+    initials.push(nameArr[1].charAt(0));
+    return initials.join(".");
+   }
+   console.log(abbrevName("anna Szpecht"));
+
+   const sequenceSum = (begin, end, step) => {
+    
+   }
