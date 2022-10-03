@@ -2,7 +2,6 @@ console.log("hello from app.js");
 // numbers = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
 // numbers2= [1,2,3,4,5,8];
 // negative= [0,0];
-
 // console.log(numbers);
 // console.log(numbers2);
 
@@ -19,7 +18,6 @@ console.log("hello from app.js");
 //     }
 //     return null;
 //     }
-
 // console.log('Solution for findNotConsecutive:');
 // console.log('numbers = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];')
 // console.log(findNotConsecutive(numbers));
@@ -29,19 +27,18 @@ console.log("hello from app.js");
 // console.log(findNotConsecutive([4,5,6,7,9,10]));
 // console.log('find from negative ');
 // console.log(findNotConsecutive(negative));
-
+//----------------------------------------------------------------
 // function multiply (arr) {
 //   const multiplication = arr.reduce((accumulator, current) => {
 //     return accumulator * current;
 //   });
 //   return multiplication;
 // };
-
 // console.log('SOLUTION FOR MULTIPLICATION:')
 // console.log(" multiply([1,2,3,4])")
 // const multiplication = multiply([1,2,3,4]);
 // console.log(multiply([1,2,3,4]));
-
+//----------------------------------------------------------------
 // let hello = "hello";
 // let HELLO = 'HELLO';
 
@@ -59,7 +56,7 @@ console.log("hello from app.js");
 // console.log(isAllCaps(HELLO));
 // console.log('isAllCaps(Ania)')
 // console.log(isAllCaps("Ania"));
-
+//----------------------------------------------------------------
 // function reverse (word) {
 //     const reversedWord = [];
 //     for(let a=word.length; a >= 0; a--) {
@@ -72,18 +69,7 @@ console.log("hello from app.js");
 // console.log('Solution for reverse(katar)');
 // console.log(reverse('katar'));
 // const aristotelis = 'Werner Vígi';
-//     Test.assertEquals(billboard("Jeong-Ho Aristotelis"), 600);
-// Test.assertEquals(billboard("Abishai Charalampos"), 570);
-// Test.assertEquals(billboard("Idwal Augustin"), 420);
-// Test.assertEquals(billboard("Hadufuns John",20), 260);
-// Test.assertEquals(billboard("Zoroaster Donnchadh"), 570);
-// Test.assertEquals(billboard("Claude Miljenko"), 450);
-// Test.assertEquals(billboard("Werner Vígi",15), 165);
-// Test.assertEquals(billboard("Anani Fridumar"), 420);
-// Test.assertEquals(billboard("Paolo Oli"), 270);
-// Test.assertEquals(billboard("Hjalmar Liupold",40), 600);
-// Test.assertEquals(billboard("Simon Eadwulf"), 390);
-
+//----------------------------------------------------------------
 //     function printNameOnBillboardCalculatePrice(name, price=15) {
 //         // const characters = name.length;
 //         // const billboard = characters * 30;
@@ -93,10 +79,10 @@ console.log("hello from app.js");
 //             total = total + price;
 //         }
 //         return total;
-
 //     }
+// console.log("Solution for printNameOnBillboardCalculatePrice");
 //     console.log(printNameOnBillboardCalculatePrice(aristotelis));
-
+//----------------------------------------------------------------
 //     const square = [1,2,2];
 
 //     function squareSum(numbers) {
@@ -107,8 +93,9 @@ console.log("hello from app.js");
 //         }
 //         return sum;
 //     }
+// console.log("Solution for squareSum");
 // console.log(squareSum(square));
-
+//----------------------------------------------------------------
 // duplicateExample = [1,1,1,2,3,5,99,100];
 //     function distinct(a) {
 //         noDuplicates = [];
@@ -124,8 +111,9 @@ console.log("hello from app.js");
 // noDuplicates = [...new Set(a)];
 // console.log(noDuplicates);
 // }
+// console.log("Solution for duplicateExample");
 // console.log(distinct(duplicateExample));
-
+//----------------------------------------------------------------
 // function getPlanetName(id){
 //     var name;
 //     switch(id){
@@ -157,7 +145,7 @@ console.log("hello from app.js");
 //     return name;
 //   }
 //   console.log(getPlanetName(5));
-
+//----------------------------------------------------------------
 // var countSheep = function (num){
 //     let sheeps = [];
 //     for(let f= 1; f <= num; f++) {
@@ -166,8 +154,9 @@ console.log("hello from app.js");
 //     }
 //     return sheeps.join('');
 //   }
-//   console.log(countSheep(5));
-
+// console.log("Solution for countSheep");
+// console.log(countSheep(5));
+//----------------------------------------------------------------
 //   function removeChar(str){
 //     let last = str.length - 1;
 //     // debugger;
@@ -175,18 +164,18 @@ console.log("hello from app.js");
 //     console.log(newStr);
 //     return newStr;
 //    };
+// console.log("Solution for removeChar");
 //    removeChar('pAniap');
-
+//----------------------------------------------------------------
 //    function bonusTime(salary, bonus) {
 //         if(bonus) {
 //             salary = salary * 10;
 //         }
 //         return `£${salary}`;
 //    }
-
 //    console.log(bonusTime(4000, false));
 //    console.log(bonusTime(4000, true));
-
+//----------------------------------------------------------------
 //    function isIsogram(str) {
 //      if(str.length = 0) {
 //       return true;
@@ -197,7 +186,6 @@ console.log("hello from app.js");
 //     let changeToArr =str.split("");
 //     let sortedArray = changeToArr.sort();
 //     console.log(sortedArray);
-
 //      for(let g=0; g < str.length; g++) {
 //       if (sortedArray[g] == sortedArray[g+1]) {
 //         return false;
@@ -209,7 +197,7 @@ console.log("hello from app.js");
 //    console.log(isIsogram("Anna"));
 //    console.log(isIsogram("nikos"));
 //    console.log(isIsogram(""));
-
+//----------------------------------------------------------------
 //    function abbrevName(name) {
 //     nameArr = [];
 //     for(l = 0; l < name.length; l++) {
@@ -218,13 +206,12 @@ console.log("hello from app.js");
 //     nameArr = name.split(" ");
 //     initials = [];
 //     console.log(nameArr);
-
 //     initials.push(nameArr[0].charAt(0).toUpperCase());
 //     initials.push(nameArr[1].charAt(0));
 //     return initials.join(".");
 //    }
 //    console.log(abbrevName("anna Szpecht"));
-
+//----------------------------------------------------------------
 //  const sequenceSum = (begin, end, step) => {
 //   let sum = 0;
 //   if(step > end) {
@@ -239,7 +226,7 @@ console.log("hello from app.js");
 
 //  console.log(sequenceSum(2,6,2));
 //  console.log(sequenceSum(1,5,3));
-
+//----------------------------------------------------------------
 //   function arithmetic(a, b, operator){
 //     let result = 0;
 //     switch(operator){
@@ -261,7 +248,7 @@ console.log("hello from app.js");
 //     return result;
 //   }
 // console.log(arithmetic(2, 2, "add"));
-
+//----------------------------------------------------------------
 // function getCount(str) {
 //   let vowCount = 0;
 //   vow = "";
@@ -283,7 +270,19 @@ console.log("hello from app.js");
 // }
 
 // console.log(getCount("abracadabra"));
+//----------------------------------------------------------------
+// function squareDigits(num){
+//   let number = '' + num;
+//   // console.log(number);
+//   numberArr = [];
+//   for(let i = 0; i< number.length; i++) {
+//     numberArr.push(number[i]);
+//   }
+//   // console.log(numberArr);
+//   let squredDigits = 0;
+//   let sumOfSquaredDigits = [];
 
+<<<<<<< HEAD
 // function squareDigits(num){
 //   let number = '' + num;
 //   // console.log(number);
@@ -312,13 +311,80 @@ console.log("hello from app.js");
 
 // console.log(disemvowel("This website is for losers LOL!"));
 
+=======
+//   for(let j = 0; j < numberArr.length; j++) {
+//     let n = parseInt(numberArr[j]);
+//     squaredDigits = Math.pow(n, 2);
+//     sumOfSquaredDigits.push(squaredDigits);
+//   }
+//   return parseInt(sumOfSquaredDigits.join(''));
+// }
+// console.log(squareDigits(9119));
+// console.log(squareDigits(2112));
+//----------------------------------------------------------------
+// function disemvowel(str) {
+//   let noVowel = str.replace(/a|e|i|o|u/ig, "");
+//   return noVowel;
+// }
+
+// console.log(disemvowel("This website is for losers LOL!"));
+//----------------------------------------------------------------
+>>>>>>> 8e791e1 (descendingOrder (without 0 case) and mumbling)
 // function highAndLow(numbers){
 //   numbers = numbers.split(" ");
 //   // console.log(numbers);
 //   return Math.max(...numbers) + " " + Math.min(...numbers); 
 // }
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+<<<<<<< HEAD
 
 function descendingOrder(n){
   //...
 }
+=======
+//----------------------------------------------------------------
+function descendingOrder(n){
+  // array = [];
+  // string = n.toString();
+  // for(let i = 0; i <= string.length; i++) {
+  //   array.push(string[i]);
+  // }
+  // console.log(array);
+  //  for(let i = 0; i < array.length - 1; i++) {
+  //   for(let j = i + 1; j < array.length; j++) {
+  //     if(parseInt(array[i]) < parseInt(array[j])) {
+  //       temp = array[i];
+  //       array[i] = array [j];
+  //       array [j]= temp;
+  //     } 
+  //   }
+  // }
+  // return array.join("");
+  //another solution also fail with 0
+    nToString = n.toString();
+    nBackToNumArr = nToString.split("");
+    nBackToNumArr.sort((a, b) => b - a);
+    nToNumArr = nBackToNumArr.join("");
+    return nToNumArr;
+}
+// console.log(descendingOrder(0, 0));
+console.log(descendingOrder(013456789));
+//----------------------------------------------------------------
+function accum(s) {
+  const result = []
+  const lowerCase = s.toLowerCase()
+
+  for(let i = 0; i < lowerCase.length; i++) {
+    let string = lowerCase[i].toUpperCase()
+    for(let j = 0; j < i; j++) {
+      string = string + lowerCase[i];
+    }
+    result.push(string);
+  }
+  return result.join("-")
+}
+console.log(accum("abc"));
+//----------------------------------------------------------------
+
+
+>>>>>>> 8e791e1 (descendingOrder (without 0 case) and mumbling)
