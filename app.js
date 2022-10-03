@@ -282,7 +282,6 @@ console.log("hello from app.js");
 //   let squredDigits = 0;
 //   let sumOfSquaredDigits = [];
 
-<<<<<<< HEAD
 // function squareDigits(num){
 //   let number = '' + num;
 //   // console.log(number);
@@ -310,8 +309,7 @@ console.log("hello from app.js");
 // }
 
 // console.log(disemvowel("This website is for losers LOL!"));
-
-=======
+//----------------------------------------------------------------
 //   for(let j = 0; j < numberArr.length; j++) {
 //     let n = parseInt(numberArr[j]);
 //     squaredDigits = Math.pow(n, 2);
@@ -329,21 +327,14 @@ console.log("hello from app.js");
 
 // console.log(disemvowel("This website is for losers LOL!"));
 //----------------------------------------------------------------
->>>>>>> 8e791e1 (descendingOrder (without 0 case) and mumbling)
 // function highAndLow(numbers){
 //   numbers = numbers.split(" ");
 //   // console.log(numbers);
 //   return Math.max(...numbers) + " " + Math.min(...numbers); 
 // }
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
-<<<<<<< HEAD
-
-function descendingOrder(n){
-  //...
-}
-=======
 //----------------------------------------------------------------
-function descendingOrder(n){
+// function descendingOrder(n){
   // array = [];
   // string = n.toString();
   // for(let i = 0; i <= string.length; i++) {
@@ -361,30 +352,47 @@ function descendingOrder(n){
   // }
   // return array.join("");
   //another solution also fail with 0
-    nToString = n.toString();
-    nBackToNumArr = nToString.split("");
-    nBackToNumArr.sort((a, b) => b - a);
-    nToNumArr = nBackToNumArr.join("");
-    return nToNumArr;
-}
+//     nToString = n.toString();
+//     nBackToNumArr = nToString.split("");
+//     nBackToNumArr.sort((a, b) => b - a);
+//     nToNumArr = nBackToNumArr.join("");
+//     return nToNumArr;
+// }
 // console.log(descendingOrder(0, 0));
-console.log(descendingOrder(013456789));
+// console.log(descendingOrder(013456789));
 //----------------------------------------------------------------
-function accum(s) {
-  const result = []
-  const lowerCase = s.toLowerCase()
+// function accum(s) {
+//   const result = []
+//   const lowerCase = s.toLowerCase()
 
-  for(let i = 0; i < lowerCase.length; i++) {
-    let string = lowerCase[i].toUpperCase()
-    for(let j = 0; j < i; j++) {
-      string = string + lowerCase[i];
+//   for(let i = 0; i < lowerCase.length; i++) {
+//     let string = lowerCase[i].toUpperCase()
+//     for(let j = 0; j < i; j++) {
+//       string = string + lowerCase[i];
+//     }
+//     result.push(string);
+//   }
+//   return result.join("-")
+// }
+// console.log(accum("abc"));
+//----------------------------------------------------------------
+function getMiddle(string) {
+  newArr = [];
+  let middle;
+  for(let i = 0; i < string.length; i++) {
+    if(string.length % 2 !== 0){
+      middle = Math.ceil(string.length / 2 - 1);
+      newArr.push(string[middle]);
+    } else {
+      middle = Math.round(string.length/2);
+      newArr.push(string[middle - 1]);
+      newArr.push(string[middle]);
     }
-    result.push(string);
+    // console.log(newArr);
+    return newArr.join("");
   }
-  return result.join("-")
 }
-console.log(accum("abc"));
+
+console.log(getMiddle("test"));
+console.log(getMiddle("testing"));
 //----------------------------------------------------------------
-
-
->>>>>>> 8e791e1 (descendingOrder (without 0 case) and mumbling)
