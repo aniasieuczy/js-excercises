@@ -429,16 +429,43 @@ console.log("hello from app.js");
 // console.log(Math.sqrt(25));
 // console.log('----------------------------------------------------------------');
 function XO (str)  {
-if(str.includes("x") && str.includes("o")) {
+
+// if(str.includes("x") && str.includes("o")) {
+let countX = 0;
+let countO = 0;
+  for(let i = 0; i<= str.length; i++) {
+    if(str[i]=== "x" || str[i] === "X"){
+      countX++;
+    } else if (str[i] === "o" || str[i] === "O") {
+      countO++;
+    }
+  }
+if(countX === countO){
+    return true;
+} else if (!str.includes("x") && !str.includes("o") ) { 
   return true;
-} else if (!str.includes("x") && !str.includes("o")) { 
-  return true;
-} else if ()
+} 
 return false;
 }
 
-  // for(let i = 0; i<= str.length; i++) {
-  
-  // }
 console.log(XO("xxoo"));
+console.log(XO("xooxx"));
+console.log(XO("ooxXm"));
 console.log(XO("zpzpzpp"));
+console.log(XO("zzoo"));
+// console.log('----------------------------------------------------------------');
+// String.prototype.toJadenCase = function() {
+  function toJadenCase(string) {
+
+  caps = [];
+  let words = string.split(" ");
+  console.log(words);
+
+  for(let i = 0; i < words.length; i++) {
+    word = words[i];
+    caps.push(word[0].toUpperCase()+ word.slice(1));
+  }
+return caps.join(" ");
+}
+
+console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
