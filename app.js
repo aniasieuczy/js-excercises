@@ -27,7 +27,7 @@ console.log("hello from app.js");
 // console.log(findNotConsecutive([4,5,6,7,9,10]));
 // console.log('find from negative ');
 // console.log(findNotConsecutive(negative));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function multiply (arr) {
 //   const multiplication = arr.reduce((accumulator, current) => {
 //     return accumulator * current;
@@ -38,7 +38,7 @@ console.log("hello from app.js");
 // console.log(" multiply([1,2,3,4])")
 // const multiplication = multiply([1,2,3,4]);
 // console.log(multiply([1,2,3,4]));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // let hello = "hello";
 // let HELLO = 'HELLO';
 
@@ -56,7 +56,7 @@ console.log("hello from app.js");
 // console.log(isAllCaps(HELLO));
 // console.log('isAllCaps(Ania)')
 // console.log(isAllCaps("Ania"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function reverse (word) {
 //     const reversedWord = [];
 //     for(let a=word.length; a >= 0; a--) {
@@ -69,7 +69,7 @@ console.log("hello from app.js");
 // console.log('Solution for reverse(katar)');
 // console.log(reverse('katar'));
 // const aristotelis = 'Werner Vígi';
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //     function printNameOnBillboardCalculatePrice(name, price=15) {
 //         // const characters = name.length;
 //         // const billboard = characters * 30;
@@ -82,7 +82,7 @@ console.log("hello from app.js");
 //     }
 // console.log("Solution for printNameOnBillboardCalculatePrice");
 //     console.log(printNameOnBillboardCalculatePrice(aristotelis));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //     const square = [1,2,2];
 
 //     function squareSum(numbers) {
@@ -95,7 +95,7 @@ console.log("hello from app.js");
 //     }
 // console.log("Solution for squareSum");
 // console.log(squareSum(square));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // duplicateExample = [1,1,1,2,3,5,99,100];
 //     function distinct(a) {
 //         noDuplicates = [];
@@ -113,7 +113,7 @@ console.log("hello from app.js");
 // }
 // console.log("Solution for duplicateExample");
 // console.log(distinct(duplicateExample));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function getPlanetName(id){
 //     var name;
 //     switch(id){
@@ -145,7 +145,7 @@ console.log("hello from app.js");
 //     return name;
 //   }
 //   console.log(getPlanetName(5));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // var countSheep = function (num){
 //     let sheeps = [];
 //     for(let f= 1; f <= num; f++) {
@@ -156,7 +156,7 @@ console.log("hello from app.js");
 //   }
 // console.log("Solution for countSheep");
 // console.log(countSheep(5));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //   function removeChar(str){
 //     let last = str.length - 1;
 //     // debugger;
@@ -166,7 +166,7 @@ console.log("hello from app.js");
 //    };
 // console.log("Solution for removeChar");
 //    removeChar('pAniap');
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //    function bonusTime(salary, bonus) {
 //         if(bonus) {
 //             salary = salary * 10;
@@ -175,7 +175,7 @@ console.log("hello from app.js");
 //    }
 //    console.log(bonusTime(4000, false));
 //    console.log(bonusTime(4000, true));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //    function isIsogram(str) {
 //      if(str.length = 0) {
 //       return true;
@@ -197,7 +197,7 @@ console.log("hello from app.js");
 //    console.log(isIsogram("Anna"));
 //    console.log(isIsogram("nikos"));
 //    console.log(isIsogram(""));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //    function abbrevName(name) {
 //     nameArr = [];
 //     for(l = 0; l < name.length; l++) {
@@ -211,7 +211,7 @@ console.log("hello from app.js");
 //     return initials.join(".");
 //    }
 //    console.log(abbrevName("anna Szpecht"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //  const sequenceSum = (begin, end, step) => {
 //   let sum = 0;
 //   if(step > end) {
@@ -226,7 +226,7 @@ console.log("hello from app.js");
 
 //  console.log(sequenceSum(2,6,2));
 //  console.log(sequenceSum(1,5,3));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //   function arithmetic(a, b, operator){
 //     let result = 0;
 //     switch(operator){
@@ -248,7 +248,7 @@ console.log("hello from app.js");
 //     return result;
 //   }
 // console.log(arithmetic(2, 2, "add"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function getCount(str) {
 //   let vowCount = 0;
 //   vow = "";
@@ -270,7 +270,7 @@ console.log("hello from app.js");
 // }
 
 // console.log(getCount("abracadabra"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function squareDigits(num){
 //   let number = '' + num;
 //   // console.log(number);
@@ -309,7 +309,7 @@ console.log("hello from app.js");
 // }
 
 // console.log(disemvowel("This website is for losers LOL!"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 //   for(let j = 0; j < numberArr.length; j++) {
 //     let n = parseInt(numberArr[j]);
 //     squaredDigits = Math.pow(n, 2);
@@ -319,21 +319,21 @@ console.log("hello from app.js");
 // }
 // console.log(squareDigits(9119));
 // console.log(squareDigits(2112));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function disemvowel(str) {
 //   let noVowel = str.replace(/a|e|i|o|u/ig, "");
 //   return noVowel;
 // }
 
 // console.log(disemvowel("This website is for losers LOL!"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function highAndLow(numbers){
 //   numbers = numbers.split(" ");
 //   // console.log(numbers);
 //   return Math.max(...numbers) + " " + Math.min(...numbers); 
 // }
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function descendingOrder(n){
   // array = [];
   // string = n.toString();
@@ -360,7 +360,7 @@ console.log("hello from app.js");
 // }
 // console.log(descendingOrder(0, 0));
 // console.log(descendingOrder(013456789));
-//----------------------------------------------------------------
+// console.log('----------------------------------------------------------------');
 // function accum(s) {
 //   const result = []
 //   const lowerCase = s.toLowerCase()
@@ -375,24 +375,35 @@ console.log("hello from app.js");
 //   return result.join("-")
 // }
 // console.log(accum("abc"));
-//----------------------------------------------------------------
-function getMiddle(string) {
-  newArr = [];
-  let middle;
-  for(let i = 0; i < string.length; i++) {
-    if(string.length % 2 !== 0){
-      middle = Math.ceil(string.length / 2 - 1);
-      newArr.push(string[middle]);
-    } else {
-      middle = Math.round(string.length/2);
-      newArr.push(string[middle - 1]);
-      newArr.push(string[middle]);
-    }
-    // console.log(newArr);
-    return newArr.join("");
-  }
+// console.log('----------------------------------------------------------------');
+// function getMiddle(string) {
+//   newArr = [];
+//   let middle;
+//   for(let i = 0; i < string.length; i++) {
+//     if(string.length % 2 !== 0){
+//       middle = Math.ceil(string.length / 2 - 1);
+//       newArr.push(string[middle]);
+//     } else {
+//       middle = Math.round(string.length/2);
+//       newArr.push(string[middle - 1]);
+//       newArr.push(string[middle]);
+//     }
+//     // console.log(newArr);
+//     return newArr.join("");
+//   }
+// }
+
+// console.log(getMiddle("test"));
+// console.log(getMiddle("testing"));
+// console.log('----------------------------------------------------------------');
+function filter_list(l){
+const numbersOnly = l.filter(x => {
+ return typeof x === 'number';
+})
+return numbersOnly
 }
 
-console.log(getMiddle("test"));
-console.log(getMiddle("testing"));
-//----------------------------------------------------------------
+console.log(filter_list([1, 2, 'a', 'b']));
+console.log(filter_list([1,'a','b',0,15]));
+console.log(filter_list([1,2,'aasf','1','123',123]));
+// console.log('----------------------------------------------------------------');
