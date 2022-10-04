@@ -396,14 +396,49 @@ console.log("hello from app.js");
 // console.log(getMiddle("test"));
 // console.log(getMiddle("testing"));
 // console.log('----------------------------------------------------------------');
-function filter_list(l){
-const numbersOnly = l.filter(x => {
- return typeof x === 'number';
-})
-return numbersOnly
+// function filter_list(l){
+// const numbersOnly = l.filter(x => {
+//  return typeof x === 'number';
+// })
+// return numbersOnly
+// }
+
+// console.log(filter_list([1, 2, 'a', 'b']));
+// console.log(filter_list([1,'a','b',0,15]));
+// console.log(filter_list([1,2,'aasf','1','123',123]));
+// console.log('----------------------------------------------------------------');
+// var isSquare = function (n) {
+//   let squared = Math.sqrt(n);
+//   if ( n === 0) {
+//     return true;
+//   } else if (squared % 1 != 0) {
+//     console.log(squared % 1);
+//     return false;
+//   } else if (squared % squared === 0) {
+//     console.log(Math.sqrt(n));
+//     console.log( n * n);
+//     return true;
+//   } 
+//  return false;
+// }
+// console.log(isSquare(4));
+// console.log(isSquare(3));
+// console.log(Math.sqrt(3));
+// console.log(5 * 5);
+// console.log(Math.sqrt(5));
+// console.log(Math.sqrt(25));
+// console.log('----------------------------------------------------------------');
+function XO (str)  {
+if(str.includes("x") && str.includes("o")) {
+  return true;
+} else if (!str.includes("x") && !str.includes("o")) { 
+  return true;
+} else if ()
+return false;
 }
 
-console.log(filter_list([1, 2, 'a', 'b']));
-console.log(filter_list([1,'a','b',0,15]));
-console.log(filter_list([1,2,'aasf','1','123',123]));
-// console.log('----------------------------------------------------------------');
+  // for(let i = 0; i<= str.length; i++) {
+  
+  // }
+console.log(XO("xxoo"));
+console.log(XO("zpzpzpp"));
