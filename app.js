@@ -428,44 +428,86 @@ console.log("hello from app.js");
 // console.log(Math.sqrt(5));
 // console.log(Math.sqrt(25));
 // console.log('----------------------------------------------------------------');
-function XO (str)  {
+// function XO (str)  {
 
 // if(str.includes("x") && str.includes("o")) {
-let countX = 0;
-let countO = 0;
-  for(let i = 0; i<= str.length; i++) {
-    if(str[i]=== "x" || str[i] === "X"){
-      countX++;
-    } else if (str[i] === "o" || str[i] === "O") {
-      countO++;
-    }
-  }
-if(countX === countO){
-    return true;
-} else if (!str.includes("x") && !str.includes("o") ) { 
-  return true;
-} 
-return false;
-}
+// let countX = 0;
+// let countO = 0;
+//   for(let i = 0; i<= str.length; i++) {
+//     if(str[i]=== "x" || str[i] === "X"){
+//       countX++;
+//     } else if (str[i] === "o" || str[i] === "O") {
+//       countO++;
+//     }
+//   }
+// if(countX === countO){
+//     return true;
+// } else if (!str.includes("x") && !str.includes("o") ) { 
+//   return true;
+// } 
+// return false;
+// }
 
-console.log(XO("xxoo"));
-console.log(XO("xooxx"));
-console.log(XO("ooxXm"));
-console.log(XO("zpzpzpp"));
-console.log(XO("zzoo"));
+// console.log(XO("xxoo"));
+// console.log(XO("xooxx"));
+// console.log(XO("ooxXm"));
+// console.log(XO("zpzpzpp"));
+// console.log(XO("zzoo"));
 // console.log('----------------------------------------------------------------');
-// String.prototype.toJadenCase = function() {
-  function toJadenCase(string) {
 
-  caps = [];
-  let words = string.split(" ");
-  console.log(words);
+//   function toJadenCase(string) {
+//   caps = [];
+//   let words = string.split(" ");
+//   console.log(words);
 
-  for(let i = 0; i < words.length; i++) {
-    word = words[i];
-    caps.push(word[0].toUpperCase()+ word.slice(1));
-  }
-return caps.join(" ");
+//   for(let i = 0; i < words.length; i++) {
+//     word = words[i];
+//     caps.push(word[0].toUpperCase()+ word.slice(1));
+//   }
+// return caps.join(" ");
+// }
+
+// console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
+// console.log('----------------------------------------------------------------');
+// function findShort(s) {
+//   let words = s.split(" ");
+//   console.log(words);
+//   length = [];
+//   for(let i = 0; i < words.length; i++) {
+//     length.push(words[i].length);
+//   }
+//   return Math.min(...length);
+// }
+// console.log(findShort("Which is the longest word of all"));
+// console.log('----------------------------------------------------------------');
+// function sumTwoSmallestNumbers(numbers) {  
+//   smallest = [];
+//   let sumOfSmallest = 0;
+//   const sorted = numbers.sort((a, b) => a - b);
+//   // console.log(sorted);
+//   for(let i = 0; i< 2; i++){
+//     // console.log(sorted[i]);
+//     // smallest.push(sorted[i]);
+//     sumOfSmallest = sorted[i] + sumOfSmallest;
+//   }
+//   return sumOfSmallest;
+// }
+// console.log(sumTwoSmallestNumbers([19, 5, 42, 2]));
+// console.log('----------------------------------------------------------------');
+// function friend(friends){
+//   trueFriends = [];
+//   for(let i = 0; i < friends.length; i++) {
+//     if(friends[i].length == 4) {
+//       trueFriends.push(friends[i]);
+//     }
+//   }
+//   return trueFriends;
+// }
+// console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
+// console.log('----------------------------------------------------------------');
+function maskify(cc) {
+  let length = cc.length;
+  console.log(length);
+
 }
-
-console.log(toJadenCase("How can mirrors be real if our eyes aren't real"));
+console.log(maskify('ananananananannnananana Batman!'));
