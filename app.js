@@ -429,7 +429,6 @@ console.log("hello from app.js");
 // console.log(Math.sqrt(25));
 // console.log('----------------------------------------------------------------');
 // function XO (str)  {
-
 // if(str.includes("x") && str.includes("o")) {
 // let countX = 0;
 // let countO = 0;
@@ -506,8 +505,36 @@ console.log("hello from app.js");
 // console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
 // console.log('----------------------------------------------------------------');
 function maskify(cc) {
+  
   let length = cc.length;
-  console.log(length);
+  let start = length - 4;
+  masked = [];
+  
+for(let i = 0; i < start; i++){
+  masked.push("#");
+}
 
+for(let j = start; j < length; j++) {
+  masked.push(cc[j]);
+}
+// console.log(masked);
+return masked.join("");
 }
 console.log(maskify('ananananananannnananana Batman!'));
+//sprawdz jak dziala slice
+// function maskify(cc) {
+//   return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
+// }
+// console.log('----------------------------------------------------------------');
+function longest(s1, s2) {
+  // const mix = [...s1, ...s2];
+  // console.log(mix);
+  // const all = mix.sort(); 
+  // onlyOne = new Set(all)
+  onlyOne = new Set ([...s1, ...s2].sort());
+  // for(let e of onlyOne) {
+  //   console.log(e);
+  // }
+ return Array.from(onlyOne).join("");
+}
+console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
