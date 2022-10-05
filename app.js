@@ -504,37 +504,76 @@ console.log("hello from app.js");
 // }
 // console.log(friend(["Ryan", "Kieran", "Jason", "Yous"]));
 // console.log('----------------------------------------------------------------');
-function maskify(cc) {
+// function maskify(cc) {
+//   let length = cc.length;
+//   let start = length - 4;
+//   masked = [];
   
-  let length = cc.length;
-  let start = length - 4;
-  masked = [];
-  
-for(let i = 0; i < start; i++){
-  masked.push("#");
-}
+// for(let i = 0; i < start; i++){
+//   masked.push("#");
+// }
 
-for(let j = start; j < length; j++) {
-  masked.push(cc[j]);
-}
-// console.log(masked);
-return masked.join("");
-}
-console.log(maskify('ananananananannnananana Batman!'));
+// for(let j = start; j < length; j++) {
+//   masked.push(cc[j]);
+// }
+// // console.log(masked);
+// return masked.join("");
+// }
+// console.log(maskify('ananananananannnananana Batman!'));
 //sprawdz jak dziala slice
 // function maskify(cc) {
 //   return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4);
 // }
 // console.log('----------------------------------------------------------------');
-function longest(s1, s2) {
-  // const mix = [...s1, ...s2];
-  // console.log(mix);
-  // const all = mix.sort(); 
-  // onlyOne = new Set(all)
-  onlyOne = new Set ([...s1, ...s2].sort());
-  // for(let e of onlyOne) {
-  //   console.log(e);
-  // }
- return Array.from(onlyOne).join("");
+// function longest(s1, s2) {
+//   onlyOne = new Set ([...s1, ...s2].sort());
+//  return Array.from(onlyOne).join("");
+// }
+// console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
+// console.log('----------------------------------------------------------------');
+
+// function openOrSenior(data) {
+
+// }
+// console.log(openOrSenior([[18, 20], [45, 2], [61, 12], [37, 6], [21, 21], [78, 9]]));
+// console.log('----------------------------------------------------------------');
+// function wordsToMarks(string){
+//   alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+//   values = [];
+//   let result = 0;
+//   let letter;
+
+//   for(let j = 1; j<= alphabet.length; j++){
+//     values.push(j);
+//   }
+ 
+//   for(let i = 0; i <= string.length; i++) {
+//     letter = string.charAt(i);
+//     console.log(letter);
+
+//     for(let k = 0; k <= alphabet.length; k++) {
+//       if(letter == alphabet[k]){
+//         result = values[k] + result;
+//       }
+//     }
+//   }
+//   return result;
+// }
+// const wordsToMarks = (string) => {
+//   [...string].reduce((accumulator, valueAtIndex) => {
+//   accumulator = accumulator + valueAtIndex.charCodeAt();
+  
+// })
+// return wordsToMarks;
+// }
+
+// const wordsToMarks = s => [...s].reduce((res, c) => res += c.charCodeAt() - 96, 0);
+function wordsToMarks(string){
+  let result = 0;
+  for(let i = 0; i < string.length; i++) {
+  result = string.charCodeAt(i) - 96 + result;
+  }
+return result;
 }
-console.log(longest("xyaabbbccccdefww", "xxxxyyyyabklmopq"));
+// console.log("a".charCodeAt());
+console.log(wordsToMarks("ab"));
