@@ -578,18 +578,31 @@ console.log("hello from app.js");
 // // console.log("a".charCodeAt());
 // console.log(wordsToMarks("ab"));
 // console.log('----------------------------------------------------------------');
-function solution(number) {
-  let sum = 0;
-  // if (number < 0) {
-  //   return 0;
-  // }
-
-  for (let i = 1; i < number; i++) {
-    if ((i % 3 === 0) || (i % 5 === 0)) {
-      sum = i + sum;
-    } 
-  }
-  return sum;
-}
-console.log(solution(10));
+// function solution(number) {
+//   let sum = 0;
+//   for (let i = 1; i < number; i++) {
+//     if ((i % 3 === 0) || (i % 5 === 0)) {
+//       sum = i + sum;
+//     } 
+//   }
+//   return sum;
+// }
+// console.log(solution(10));
 // console.log('----------------------------------------------------------------');
+function spinWords(string){
+  let words = string.split(" ");
+  let spinnedWords = "";
+
+  words.map((word, i) => {
+    if(word.length >= 5) {
+      words[i] = word.split("").reverse().join("");
+    } else {
+      words[i] = word;
+    }
+    spinnedWords = words.join(" ");
+  });
+  return spinnedWords;
+}
+
+console.log(spinWords("Hey fellow warriors"));
+
