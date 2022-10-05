@@ -253,7 +253,7 @@ console.log("hello from app.js");
 //   let vowCount = 0;
 //   vow = "";
 //   for (let i = 0; i <= str.length; i++) {
-    
+
 //     if(str.charAt(i) == "a"){
 //       vowCount = vowCount + 1;
 //     } else if(str.charAt(i) == "e") {
@@ -264,7 +264,7 @@ console.log("hello from app.js");
 //       vowCount++;
 //     } else if(str.charAt(i) == "u") {
 //       vowCount++;
-//     } 
+//     }
 //   }
 //   return vowCount;
 // }
@@ -330,28 +330,28 @@ console.log("hello from app.js");
 // function highAndLow(numbers){
 //   numbers = numbers.split(" ");
 //   // console.log(numbers);
-//   return Math.max(...numbers) + " " + Math.min(...numbers); 
+//   return Math.max(...numbers) + " " + Math.min(...numbers);
 // }
 // console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
 // console.log('----------------------------------------------------------------');
 // function descendingOrder(n){
-  // array = [];
-  // string = n.toString();
-  // for(let i = 0; i <= string.length; i++) {
-  //   array.push(string[i]);
-  // }
-  // console.log(array);
-  //  for(let i = 0; i < array.length - 1; i++) {
-  //   for(let j = i + 1; j < array.length; j++) {
-  //     if(parseInt(array[i]) < parseInt(array[j])) {
-  //       temp = array[i];
-  //       array[i] = array [j];
-  //       array [j]= temp;
-  //     } 
-  //   }
-  // }
-  // return array.join("");
-  //another solution also fail with 0
+// array = [];
+// string = n.toString();
+// for(let i = 0; i <= string.length; i++) {
+//   array.push(string[i]);
+// }
+// console.log(array);
+//  for(let i = 0; i < array.length - 1; i++) {
+//   for(let j = i + 1; j < array.length; j++) {
+//     if(parseInt(array[i]) < parseInt(array[j])) {
+//       temp = array[i];
+//       array[i] = array [j];
+//       array [j]= temp;
+//     }
+//   }
+// }
+// return array.join("");
+//another solution also fail with 0
 //     nToString = n.toString();
 //     nBackToNumArr = nToString.split("");
 //     nBackToNumArr.sort((a, b) => b - a);
@@ -418,7 +418,7 @@ console.log("hello from app.js");
 //     console.log(Math.sqrt(n));
 //     console.log( n * n);
 //     return true;
-//   } 
+//   }
 //  return false;
 // }
 // console.log(isSquare(4));
@@ -441,9 +441,9 @@ console.log("hello from app.js");
 //   }
 // if(countX === countO){
 //     return true;
-// } else if (!str.includes("x") && !str.includes("o") ) { 
+// } else if (!str.includes("x") && !str.includes("o") ) {
 //   return true;
-// } 
+// }
 // return false;
 // }
 
@@ -479,7 +479,7 @@ console.log("hello from app.js");
 // }
 // console.log(findShort("Which is the longest word of all"));
 // console.log('----------------------------------------------------------------');
-// function sumTwoSmallestNumbers(numbers) {  
+// function sumTwoSmallestNumbers(numbers) {
 //   smallest = [];
 //   let sumOfSmallest = 0;
 //   const sorted = numbers.sort((a, b) => a - b);
@@ -508,7 +508,7 @@ console.log("hello from app.js");
 //   let length = cc.length;
 //   let start = length - 4;
 //   masked = [];
-  
+
 // for(let i = 0; i < start; i++){
 //   masked.push("#");
 // }
@@ -546,7 +546,7 @@ console.log("hello from app.js");
 //   for(let j = 1; j<= alphabet.length; j++){
 //     values.push(j);
 //   }
- 
+
 //   for(let i = 0; i <= string.length; i++) {
 //     letter = string.charAt(i);
 //     console.log(letter);
@@ -562,18 +562,34 @@ console.log("hello from app.js");
 // const wordsToMarks = (string) => {
 //   [...string].reduce((accumulator, valueAtIndex) => {
 //   accumulator = accumulator + valueAtIndex.charCodeAt();
-  
+
 // })
 // return wordsToMarks;
 // }
+//charCodeAt!
 
-// const wordsToMarks = s => [...s].reduce((res, c) => res += c.charCodeAt() - 96, 0);
-function wordsToMarks(string){
-  let result = 0;
-  for(let i = 0; i < string.length; i++) {
-  result = string.charCodeAt(i) - 96 + result;
+// function wordsToMarks(string){
+//   let result = 0;
+//   for(let i = 0; i < string.length; i++) {
+//   result = string.charCodeAt(i) - 96 + result;
+//   }
+// return result;
+// }
+// // console.log("a".charCodeAt());
+// console.log(wordsToMarks("ab"));
+// console.log('----------------------------------------------------------------');
+function solution(number) {
+  let sum = 0;
+  // if (number < 0) {
+  //   return 0;
+  // }
+
+  for (let i = 1; i < number; i++) {
+    if ((i % 3 === 0) || (i % 5 === 0)) {
+      sum = i + sum;
+    } 
   }
-return result;
+  return sum;
 }
-// console.log("a".charCodeAt());
-console.log(wordsToMarks("ab"));
+console.log(solution(10));
+// console.log('----------------------------------------------------------------');
