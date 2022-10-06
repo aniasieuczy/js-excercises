@@ -589,20 +589,73 @@ console.log("hello from app.js");
 // }
 // console.log(solution(10));
 // console.log('----------------------------------------------------------------');
-function spinWords(string){
-  let words = string.split(" ");
-  let spinnedWords = "";
+// function spinWords(string){
+//   let words = string.split(" ");
+//   let spinnedWords = "";
 
-  words.map((word, i) => {
-    if(word.length >= 5) {
-      words[i] = word.split("").reverse().join("");
-    } else {
-      words[i] = word;
-    }
-    spinnedWords = words.join(" ");
-  });
-  return spinnedWords;
+//   words.map((word, i) => {
+//     if(word.length >= 5) {
+//       words[i] = word.split("").reverse().join("");
+//     } else {
+//       words[i] = word;
+//     }
+//     spinnedWords = words.join(" ");
+//   });
+//   return spinnedWords;
+// }
+
+// console.log(spinWords("Hey fellow warriors"));
+// console.log('----------------------------------------------------------------');
+// function findOdd(A) {
+//   let count = 0;
+//   let arr = A.sort();
+//   console.log(arr);
+
+//   for(let i = 0; i <= arr.length; i++) {
+//     for(let j = 0; j<= arr.length; j++) {
+//       if (arr[i] == arr[j]) {
+//         count++;
+//         // console.log("i: " + i + " j: " + j + " arr[i]: " + arr[i]  + " array[j]= " + arr[j] + " count: " +  count);
+//       }
+//     }
+//     if(count % 2 !== 0) {
+//       return arr[i];
+//     }
+//   }
+// }
+
+// function findOdd(A) {
+//   //happy coding!
+//   var x = 0;
+//   for (var i = 0; i < A.length; i++) {
+//     x = x ^ A[i];
+//   }
+//   return x;
+// }
+
+// const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+
+// console.log(findOdd([7]));
+// console.log(findOdd([0, 1, 0, 1, 0]));
+// console.log(findOdd([1,1,2]));
+// console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]));
+// console.log('----------------------------------------------------------------');
+function digitalRoot(numbers) {
+  let sum = numbers;
+  let arr = [];
+
+  while(sum > 9) {
+    arr = sum.toString().split("");
+    sum = arr.reduce((a,b) => {
+      return parseInt(a) + parseInt(b);
+    });
+    console.log(arr);
+  }
+  return sum;
 }
+console.log(digitalRoot(16));
+console.log(digitalRoot(942));
+console.log(digitalRoot(132189));
+console.log(digitalRoot(492158));
 
-console.log(spinWords("Hey fellow warriors"));
-
+console.log('----------------------------------------------------------------');
