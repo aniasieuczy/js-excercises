@@ -1,0 +1,48 @@
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5rem 0.5rem;
+}
+
+h2{
+    text-align: center;
+}
+
+.backgroundColor{
+    background-color: #0c5daa;
+}
+
+.noStyling {
+    background-color: white;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    padding: 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+#btn1 {
+    background-color: lightslategray;
+}
+
+#btn2{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#boxes{
+    display: flex;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+}

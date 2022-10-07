@@ -1,4 +1,58 @@
 console.log("hello from app.js");
+
+const btn1 = document.querySelector("#btn1");
+const body = document.querySelector("body");
+
+btn1.addEventListener("click", () => {
+  body.classList.add("backgroundColor");
+})
+
+const btn2 = document.querySelector("#btn2");
+btn2.addEventListener("mouseover", () => {
+  console.log("Moused over me");
+  const height = Math.floor(Math.random() * window.innerHeight);
+  const width = Math.floor(Math.random() * window.innerWidth);
+  btn2.style.left = `${width}px`;
+  btn2.style.top = `${height}px`;
+});
+
+btn2.addEventListener('click', ()=> {
+  btn2.innerText = "YOU GOT ME!";
+  body.style.backgroundColor = "green";
+})
+
+const colors = [
+  "red",
+  "orange",
+  "yellow",
+  "green",
+  "blue",
+  "purple",
+  "indigo",
+  "violet"
+];
+const container = document.querySelector('#boxes');
+
+const h2 = document.querySelector('h2');
+const changeColor = function(box){
+  const h2 = document.querySelector("h2");
+  body.style.backgroundColor = box.style.backgroundColor;
+}
+
+
+
+for(let color of colors) {
+  const box = document.createElement("div");
+  box.style.backgroundColor = color;
+  box.classList.add('box');
+  container.appendChild(box);
+
+  box.addEventListener('click', function() {
+    changeColor(box);
+  })
+}
+
+
 // numbers = [0,1, 2, 3, 4, 5, 6, 7, 8, 9];
 // numbers2= [1,2,3,4,5,8];
 // negative= [0,0];
@@ -583,7 +637,7 @@ console.log("hello from app.js");
 //   for (let i = 1; i < number; i++) {
 //     if ((i % 3 === 0) || (i % 5 === 0)) {
 //       sum = i + sum;
-//     } 
+//     }
 //   }
 //   return sum;
 // }
@@ -624,38 +678,107 @@ console.log("hello from app.js");
 //   }
 // }
 
-// function findOdd(A) {
-//   //happy coding!
-//   var x = 0;
-//   for (var i = 0; i < A.length; i++) {
-//     x = x ^ A[i];
+// let obj = {};
+// A.forEach(element => {
+//   if(obj[element]){
+//     obj[element]++;
+//   } else {
+//     obj[element] = 1;
 //   }
-//   return x;
-// }
+// });
 
-// const findOdd = (xs) => xs.reduce((a, b) => a ^ b);
+// let keys = Object.keys(obj);
+// let result = keys.filter(key => obj[key] % 2!= 0);
+// return result;
 
 // console.log(findOdd([7]));
 // console.log(findOdd([0, 1, 0, 1, 0]));
 // console.log(findOdd([1,1,2]));
 // console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]));
 // console.log('----------------------------------------------------------------');
-function digitalRoot(numbers) {
-  let sum = numbers;
-  let arr = [];
+// function digitalRoot(numbers) {
+//   let sum = numbers;
+//   let arr = [];
 
-  while(sum > 9) {
-    arr = sum.toString().split("");
-    sum = arr.reduce((a,b) => {
-      return parseInt(a) + parseInt(b);
-    });
-    console.log(arr);
-  }
-  return sum;
-}
-console.log(digitalRoot(16));
-console.log(digitalRoot(942));
-console.log(digitalRoot(132189));
-console.log(digitalRoot(492158));
+//   while(sum > 9) {
+//     arr = sum.toString().split("");
+//     sum = arr.reduce((a,b) => {
+//       return parseInt(a) + parseInt(b);
+//     });
+//     console.log(arr);
+//   }
+//   return sum;
+// }
+// console.log(digitalRoot(16));
+// console.log(digitalRoot(942));
+// console.log(digitalRoot(132189));
+// console.log('----------------------------------------------------------------');
+// function likes(names) {
+//   console.log(names);
+//   const [first, second, third] = names;
 
-console.log('----------------------------------------------------------------');
+//   switch (names.length) {
+//     case 0:
+//       return "no one likes this";
+//       break;
+//     case 1:
+//       return `${first} likes this`;
+//       break;
+//     case 2:
+//       return `${first} and ${second} like this`;
+//       break;
+//     case 3:
+//       return `${first}, ${second} and ${third} like this`;
+//       break;
+//     default:
+//       return `${first}, ${second} and ${names.length - 2} others likes this`;
+//   }
+// }
+// console.log(likes([]));
+// console.log(likes(["Nikos"]));
+// console.log(likes(["Ania", "Iwona"]));
+// console.log(likes(["Ania", "Iwona", "Krzysiek"]));
+// console.log(likes(["Ania", "Iwona", "Krzysiek", "Marcin"]));
+// console.log('----------------------------------------------------------------');
+
+// function arrayDiff(a, b) {
+//   const diff = a.filter(b => {
+//     return a !== b;
+//   })
+//   return diff;
+// }
+// console.log(arrayDiff([1,2], [1]));
+
+const dragonEvents = [
+  { type: 'sleep', value: 10 },
+  { type: 'attack', 
+    value: 50, target: 'player-1' },
+  { type: 'eat', value: 10 },
+  { type: 'attack', value: 10, target: 'player-2' },
+  { type: 'attack', value: 50, target: 'player-2' },
+  { type: 'eat', value: 50 },
+  { type: 'sleep', value: 10 },
+  { type: 'attack', value: 20, target: 'player-1' },
+  { type: 'sleep', value: 10 },
+  { type: 'attack', value: 50, target: 'player-2' },
+  { type: 'attack', value: 50, target: 'player-1' },
+  { type: 'sleep', value: 10 },
+  { type: 'attack', value: 150, target: 'player-2' },
+  { type: 'eat', value: 10 },
+  { type: 'attack', value: 50, target: 'player-1' }
+];
+// Wypisz na ekranie ile punktów obrazen (w sumie) dostal player-1,
+// Wypisz ile punktów zycia zostalo player-2 przy zalozeniu ze na poczatku mial 1000
+
+const damageP1 = dragonEvents.filter(p => p.target && p.target.includes("player-1"))
+                              .map(v => v.value)
+                              .reduce((prev, next) => prev + next);
+// console.log(damageP1);
+
+const damageP2 = dragonEvents.filter(p => p.target && p.target.includes("player-2"))
+                            .map(v => v.value)
+                            .reduce((prev, next) => prev + next);
+
+const lifeLeftP2 = 1000 - damageP2;
+console.log("Player 2 left points of life: " + lifeLeftP2);
+
